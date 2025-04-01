@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+}
+
+.inside-col img{
+    width: 20px;
+}
+.inside-col{
+    display: flex;
+}

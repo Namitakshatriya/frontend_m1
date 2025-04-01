@@ -1,0 +1,21 @@
+
+.main-upper-part{
+    display: flex;
+}
+.dish{
+    width: 200px;
+    height: 300px;
+    background-color: antiquewhite;
+}
+.dish img{
+    width: 200px;
+}
+.order{
+    display: flex;
+}
+.order img{
+    width: 20px;
+}
+.option-section{
+    display: flex;
+}
