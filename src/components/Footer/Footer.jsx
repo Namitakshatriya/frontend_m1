@@ -12,17 +12,13 @@ const Footer = () => {
         <div className='footer-left'>
         <img src={logo} alt="Logo" />
         </div>
-
-
-
-        <div className='column2'></div>
         <div className='address'>
-       <p> Address
-Abc squre, Main Road,
-New York</p>
-<p>Phone
-023-12 12 12 12</p>
-<p>E-MAIL
+       <p className='bold'> Address</p>
+<p>Abc squre, Main Road,
+New York<br/>
+Phone
+023-12 12 12 12<br/>
+E-MAIL
 ingfuj@gmail.com</p>
         </div>
 

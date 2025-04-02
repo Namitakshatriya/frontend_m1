@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&family=Outfit:wght@100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -12,12 +13,15 @@
     text-decoration: none;
     color: inherit;
   }
-  
+  p{
+    font-family: karla;
+  }
 
   button{
     background-color: #F4CE14;
     color: #495E57;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
     border: 1px solid #495E57;
     padding: 10px 30px;
     border-radius: 8px;
@@ -27,4 +31,5 @@
 button:hover{
     background-color: #495E57;
     color: #EDEFEE;
+    border: 1px solid #F4CE14;
 }

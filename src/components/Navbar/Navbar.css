@@ -1,29 +1,83 @@
 .navbar{
-    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    padding: 20px;
+    background-color: #EDEFEE;
 }
-.navbar.logo{
+.logo{
+    /* margin-left: 200px;
+   
+    margin-bottom: 20px; */
     width: 150px;
+    margin-top: 20px;
 }
-.navbar-menu{
+
+/* Navbar Menu (Default - Visible in large screens) */
+.navbar-menu {
     display: flex;
     list-style: none;
-    gap: 50px;
+    gap: 20px;
+    font-size: 18px;
+    color: white;
+  }
+
+  /* Hide menu button by default */
+.menu-icon {
+  display: none;
+    font-size: 28px;
+    color: #495E57;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+li{
+    list-style-type: none;
+    margin-left: 30px;
+    margin-left: 10px;
     color: #495E57;
     font-size: 20px;
+    margin-top: 30px;
 }
 
-.navbar-right{
-    display: flex;
-    align-items: center;
-    gap: 40px;
+ul{
+    margin-left:200px;
+    margin-right: 150px;
 }
-
 .basket{
-    width: 40px;
+    width: 25px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.login{
+    height: 45px;
+    margin-top:20px ;
+}
+.navbar button{
+    margin-right: 20px;
 }
 
+@media (max-width: 1100px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    .menu-icon {
+        display: flex;
+          font-size: 28px;
+          color: #495E57;
+          cursor: pointer;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+    }

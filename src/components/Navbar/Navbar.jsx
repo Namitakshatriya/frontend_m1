@@ -1,26 +1,34 @@
-import React from 'react';
+import React,{ useState }  from 'react';
 import './Navbar.css';
 import logo from '../../icons_assets/Logo.svg';
 import basket from '../../icons_assets/basket .svg';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className='navbar'>
-  <img src={logo} alt="Logo" />
-    <ul className='navbar-menu'>
+    <nav className='navbar'>
+    
+
+   {/* Menu Button (Visible in small screens) */}
+   <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes /> : <FaBars />} {/* Toggle icons */}
+      </div>
+      
+{/* Logo */}
+<img src={logo} alt="Logo" className="logo" />
+      {/* Navigation Menu */}
+       <ul className={`navbar-menu ${menuOpen ? "active" : ""}`}>
      <li>Home</li>      
      <li>About</li> 
      <li>Menu</li> 
      <li>Reservations</li> 
      <li>Order Online</li> 
     </ul>
-    <div className='navbar-right'>
-      <img className='basket' src={basket} alt="Basket" />
-      <div className='dot'></div>
-      <button>Login</button>
 
-    </div>
-     </div>
+    <img src={basket} alt="basket" className="basket" />
+    <button className='login'>Login</button>
+</nav>
   )
 }
 
